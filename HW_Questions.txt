@@ -1,0 +1,29 @@
+1-Train a shallow feedforward neural network (with sigmoidal node functions and one hidden layer with twice as many nodes as the input dimensionality) for a 2-class classification task using a Genetic Algorithm; compare the results with backpropagation.
+
+2- For the same problem, use an Evolution Strategies approach, and compare with the previous results (of HW1).
+
+3- For the same problem as HW1, use a Particle Swarm Optimization approach, and compare with the previous results (HW1 and HW2).
+
+4-  Use a Learning Classifier System for learning a collection of rules for the same classification problem.  Compare with the previous results (HW1-3).
+
+5 -  Use Genetic Programming for learning a tree model for the same problem.  Compare with the previous results (HW1-4).
+
+Midterm:
+
+Modify HW1 or HW2 or HW3 using any one of the following three ideas:
+
+A. There are many small demes (sub-populations), connected using a wrap-around grid topology; periodically, each deme exports two members to its four neighbors.
+
+B. The mutation rate (or step size or similar parameter) depends on fitness, being higher for “worse” individuals in the current population.
+
+C. Most individuals in the population remain dormant, not participating in reproduction nor being killed off.  They “wake up” and participate only when the best fitness ceases to improve; they sleep again when best fitness begins to improve.
+
+Instead of accuracy, maximize the fitness function:(N1 + N2)/(1+ a N2 + b N1), where
+
+ N1=number of data points from class1, 
+
+ N2=number of data points from class 2, 
+
+ a=number of data points from class1 that are placed in class2 by the model, and
+
+ b=number of data points from class2 that are placed in class1 by the model.
